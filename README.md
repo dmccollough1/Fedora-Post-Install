@@ -1,9 +1,9 @@
-## Fedora Post Install
+# Fedora Post Install
 This repo is a fork/clone from Tobius located at https://git.furworks.de/tobias/fedora-install
 The following README text is directly from his page as this is a FORK of their work and I take Zero credit for their work.
 The purpose of this repo is to catalog and store my own tweaked script to use for my personal gear.
 
-# fedora-install
+### fedora-install
 
 A basic get-up-and-running Fedora install script.
 
