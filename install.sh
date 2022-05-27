@@ -155,111 +155,111 @@ sudo dnf distro-sync -y
 
 sudo dnf install \
 -y \
-arc-theme `#A more comfortable GTK/Gnome-Shell Theme` \
-blender `#3D Software Powerhouse` \
-breeze-cursor-theme `#A more comfortable Cursor Theme from KDE` \
-calibre `#Ebook management` \
-chromium-freeworld `#Comes with hardware acceleration and all Codecs` \
-codium `#A nice editor`\
-darktable `#Easy RAW Editor` \
-evolution-spamassassin `#Helps you deal with spam in Evolution` \
+#arc-theme `#A more comfortable GTK/Gnome-Shell Theme` \
+#blender `#3D Software Powerhouse` \
+#breeze-cursor-theme `#A more comfortable Cursor Theme from KDE` \
+#calibre `#Ebook management` \
+#chromium-freeworld `#Comes with hardware acceleration and all Codecs` \
+#codium `#A nice editor`\
+#darktable `#Easy RAW Editor` \
+#evolution-spamassassin `#Helps you deal with spam in Evolution` \
 exfat-utils `#Allows managing exfat (android sd cards and co)` \
 ffmpeg `#Adds Codec Support to Firefox, and in general` \
 file-roller-nautilus `#More Archives supported in nautilus` \
 filezilla `#S/FTP Access` \
 fuse-exfat `#Allows mounting exfat` \
 fuse-sshfs `#Allows mounting servers via sshfs` \
-gimp `#The Image Editing Powerhouse - and its plugins` \
-gimp-data-extras \
-gimp-dbp \
-gimp-dds-plugin \
-gimp-elsamuko \
-gimp-focusblur-plugin \
-gimp-fourier-plugin \
-gimpfx-foundry.noarch \
-gimp-high-pass-filter \
-gimp-layer-via-copy-cut \
-gimp-lensfun \
-gimp-lqr-plugin \
-gimp-luminosity-masks \
-gimp-paint-studio \
-gimp-resynthesizer \
-gimp-save-for-web \
-gimp-wavelet-decompose \
-gimp-wavelet-denoise-plugin \
+#gimp `#The Image Editing Powerhouse - and its plugins` \
+#gimp-data-extras \
+#gimp-dbp \
+#gimp-dds-plugin \
+#gimp-elsamuko \
+#gimp-focusblur-plugin \
+#gimp-fourier-plugin \
+#gimpfx-foundry.noarch \
+#gimp-high-pass-filter \
+#gimp-layer-via-copy-cut \
+#gimp-lensfun \
+#gimp-lqr-plugin \
+#gimp-luminosity-masks \
+#gimp-paint-studio \
+#gimp-resynthesizer \
+#gimp-save-for-web \
+#gimp-wavelet-decompose \
+#gimp-wavelet-denoise-plugin \
 git `#VCS done right` \
-glances `#Nice Monitor for your System` \
-gmic-gimp \
-gnome-shell-extension-dash-to-dock `#dash for gnome` \
-gnome-shell-extension-user-theme `#Enables theming the gnome shell` \
+#glances `#Nice Monitor for your System` \
+#gmic-gimp \
+#gnome-shell-extension-dash-to-dock `#dash for gnome` \
+#gnome-shell-extension-user-theme `#Enables theming the gnome shell` \
 gnome-tweaks `#Your central place to make gnome like you want` \
-GREYCstoration-gimp \
+#GREYCstoration-gimp \
 gtkhash-nautilus `#To get a file has via gui` \
 gvfs-fuse `#gnome<>fuse` \
 gvfs-mtp `#gnome<>android` \
 gvfs-nfs `#gnome<>ntfs` \
 gvfs-smb `#gnome<>samba` \
-htop `#Cli process monitor` \
-inkscape  `#Working with .svg files` \
-kdenlive  `#Advanced Video Editor` \
-keepassxc  `#Password Manager` \
-krita  `#Painting done right` \
+#htop `#Cli process monitor` \
+#inkscape  `#Working with .svg files` \
+#kdenlive  `#Advanced Video Editor` \
+#keepassxc  `#Password Manager` \
+#krita  `#Painting done right` \
 lm_sensors `#Show your systems Temparature` \
-'mozilla-fira-*' `#A nice font family` \
+#'mozilla-fira-*' `#A nice font family` \
 mpv `#The best media player (with simple gui)` \
-mumble `#Talk with your friends` \
+#mumble `#Talk with your friends` \
 nautilus-extensions `#What it says on the tin` \
 nautilus-image-converter \
 nautilus-search-tool \
 NetworkManager-openvpn-gnome `#To enforce that its possible to import .ovpn files in the settings` \
-openshot `#Simple Video Editor` \
+#openshot `#Simple Video Editor` \
 openssh-askpass `#Base Lib to let applications request ssh pass via gui` \
 p7zip `#Archives` \
 p7zip-plugins `#Even more of them` \
-papirus-icon-theme `#A quite nice icon theme` \
-pv `#pipe viewer - see what happens between the | with output | pv | receiver ` \
+#papirus-icon-theme `#A quite nice icon theme` \
+#pv `#pipe viewer - see what happens between the | with output | pv | receiver ` \
 pulseeffects `#Tweak your Music!` \
 python3-devel `#Python Development Gear` \
 python3-neovim `#Python Neovim Libs` \
 rawtherapee `#Professional RAW Editor` \
 spamassassin `#Dep to make sure it is locally installed for Evolution` \
-telegram-desktop `#Chatting, with newer openssl and qt base!` \
-tilix `#The best terminal manager i know of` \
-tilix-nautilus `#Adds right click open in tilix to nautilus` \
-transmission `#Torrent Client` \
-tuned `#Tuned can optimize your performance according to metrics. tuned-adm profile powersave can help you on laptops, alot` \
-unar `#free rar decompression` \
-vagrant `#Virtual Machine management and autodeployment` \
-vagrant-libvirt `#integration with libvirt` \
-virt-manager `#A gui to manage virtual machines` \
-wavemon `#a cli wifi status tool` \
-youtube-dl `#Allows you to download and save youtube videos but also to open their links by dragging them into mpv!` \
-ansible `#Awesome to manage multiple machines or define states for systems` \
+#telegram-desktop `#Chatting, with newer openssl and qt base!` \
+#tilix `#The best terminal manager i know of` \
+#tilix-nautilus `#Adds right click open in tilix to nautilus` \
+#transmission `#Torrent Client` \
+#tuned `#Tuned can optimize your performance according to metrics. tuned-adm profile powersave can help you on laptops, alot` \
+#unar `#free rar decompression` \
+#vagrant `#Virtual Machine management and autodeployment` \
+#vagrant-libvirt `#integration with libvirt` \
+#virt-manager `#A gui to manage virtual machines` \
+#wavemon `#a cli wifi status tool` \
+#youtube-dl `#Allows you to download and save youtube videos but also to open their links by dragging them into mpv!` \
+#ansible `#Awesome to manage multiple machines or define states for systems` \
 adobe-source-code-pro-fonts `#The most beautiful monospace font around` \
-borgbackup `#If you need backups, this is your tool for it` \
-gitg `#a gui for git, a little slow on larger repos sadly` \
-iotop  `#disk usage cli monitor` \
-meld `#Quick Diff Tool` \
+#borgbackup `#If you need backups, this is your tool for it` \
+#gitg `#a gui for git, a little slow on larger repos sadly` \
+#iotop  `#disk usage cli monitor` \
+#meld `#Quick Diff Tool` \
 nano `#Because pressing i is too hard sometimes` \
 neovim `#the better vim` \
-nethogs `#Whats using all your traffic? Now you know!` \
-nload `#Network Load Monitor` \
-tig `#cli git tool` \
-vim-enhanced `#full vim` \
-zsh `#Best shell` \
-zsh-syntax-highlighting `#Now with syntax highlighting` \
-cantata `#A beautiful mpd control` \
-caddy `#A quick webserver that can be used to share a directory with others in <10 seconds` \
+#nethogs `#Whats using all your traffic? Now you know!` \
+#nload `#Network Load Monitor` \
+#tig `#cli git tool` \
+#vim-enhanced `#full vim` \
+#zsh `#Best shell` \
+#zsh-syntax-highlighting `#Now with syntax highlighting` \
+#cantata `#A beautiful mpd control` \
+#caddy `#A quick webserver that can be used to share a directory with others in <10 seconds` \
 cockpit `#A An awesome local and remote management tool` \
 cockpit-bridge \
-fortune-mod `#Inspiring Quotes` \
-hexchat `#Irc Client` \
-libguestfs-tools `#Resize Vm Images and convert them` \
-ncdu `#Directory listing CLI tool. For a gui version take a look at "baobab"` \
-nextcloud-client `#Nextcloud Integration for Fedora` \
-nextcloud-client-nautilus `#Also for the File Manager, shows you file status` \
-sqlite-analyzer `#If you work with sqlite databases` \
-sqlitebrowser `#These two help alot`
+#fortune-mod `#Inspiring Quotes` \
+#hexchat `#Irc Client` \
+#libguestfs-tools `#Resize Vm Images and convert them` \
+#ncdu `#Directory listing CLI tool. For a gui version take a look at "baobab"` \
+#nextcloud-client `#Nextcloud Integration for Fedora` \
+#nextcloud-client-nautilus `#Also for the File Manager, shows you file status` \
+#sqlite-analyzer `#If you work with sqlite databases` \
+#sqlitebrowser `#These two help alot`
 
 # Pulseeffects: Autoenable
 tee -a ~/.config/autostart/pulseeffects-service.desktop > /dev/null <<EOF
@@ -333,10 +333,10 @@ sudo systemctl enable --now cockpit.socket
 gsettings set com.gexperts.Tilix.Settings theme-variant 'dark'
 
 #Gnome Shell Theming
-gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'
-gsettings set org.gnome.desktop.interface cursor-theme 'Breeze_Snow'
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-gsettings set org.gnome.shell.extensions.user-theme name 'Arc-Dark-solid'
+#gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'
+#gsettings set org.gnome.desktop.interface cursor-theme 'Breeze_Snow'
+#gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+#gsettings set org.gnome.shell.extensions.user-theme name 'Arc-Dark-solid'
 
 #Set SCP as Monospace (Code) Font
 gsettings set org.gnome.desktop.interface monospace-font-name 'Source Code Pro Semi-Bold 12'
@@ -355,26 +355,6 @@ gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
 gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
 
-#Dash to Dock Theme
-gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme false
-gsettings set org.gnome.shell.extensions.dash-to-dock custom-background-color false
-gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-customize-running-dots true
-gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#729fcf'
-gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-shrink true
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed true
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height true
-gsettings set org.gnome.shell.extensions.dash-to-dock force-straight-corner false
-gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed true
-gsettings set org.gnome.shell.extensions.dash-to-dock intellihide-mode 'ALL_WINDOWS'
-gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
-gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
-gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items false
-gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'FIXED'
-gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-style 'SEGMENTED'
-gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.70000000000000000
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
-
 #This indexer is nice, but can be detrimental for laptop users battery life
 gsettings set org.freedesktop.Tracker.Miner.Files index-on-battery false
 gsettings set org.freedesktop.Tracker.Miner.Files index-on-battery-first-time false
@@ -385,12 +365,6 @@ gsettings set org.gnome.nautilus.icon-view default-zoom-level 'standard'
 gsettings set org.gnome.nautilus.preferences executable-text-activation 'ask'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 gsettings set org.gnome.nautilus.list-view use-tree-view trueC
-
-#Gnome Night Light (Like flux/redshift)
-gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic false
-gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-to 9.0
-gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-from 18.0
 
 # Basic Music Example Tweaks
 gsettings set com.github.wwmm.pulseeffects.sinkinputs.bassenhancer post-messages true
@@ -407,7 +381,6 @@ gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools sc-level 1.0
 gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools delay 0.10000000000000000
 gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools stereo-base 0.10000000000000000
 gsettings set com.github.wwmm.pulseeffects.sinkinputs.stereotools stereo-phase 0.10000000000000000
-
 
 # Steam games (32bit) have issues with the too new 32bit compat libs in fedora
 # Flatpak is the better option here
