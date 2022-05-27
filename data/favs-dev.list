@@ -1,0 +1,12 @@
+autoconf
+automake
+bzr
+git
+gnome-common
+gtk3-devel
+icon-naming-utils
+librsvg2-tools
+nodejs
+optipng
+php
+rust

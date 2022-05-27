@@ -1,0 +1,80 @@
+#!/bin/bash
+
+# Install OpenH264 Codecs
+function openh264_codec {
+	# Variables
+	NAME="OpenH264 Codec"
+	REPO="fedora-cisco-openh264"
+	PACKAGE=gstreamer1-plugin-openh264
+	# Check if package is installed
+	if [ $(check_package_installed ${PACKAGE}) = 1 ]; then
+		echo_message warning "Package '$PACKAGE' is not installed. Installing..."
+		# Add repository
+		echo_message info "Enabling '$REPO' repository..."
+		superuser_do "dnf config-manager --set-enabled $REPO"
+		# Install package(s)
+		echo_message info "Installing $NAME..."
+		superuser_do "dnf install -y $PACKAGE"
+		# Finished
+		echo_message success "Installation of '$PACKAGE' complete."
+		whiptail --title "Finished" --msgbox "Installation of $NAME complete." 8 56
+		install_codecs
+	else
+		# Already installed
+		echo_message success "$NAME already installed."
+		whiptail --title "Finished" --msgbox "$NAME is already installed." 8 56
+		install_codecs
+	fi
+}
+
+# Install FFmpeg Codecs
+function ffpmeg_codecs {
+	# Add RPM Fusion free
+	add_rpmfusion 'free' echo
+	# Update the list of packages in 'data/codecs-ffmpeg.list' to suit your preferences
+	install_from_list "FFmpeg multimedia codecs" "codecs-ffmpeg" install_codecs
+}
+
+# Install GStreamer (free) Codecs
+function gstreamer_free {
+	# Add RPM Fusion free
+	add_rpmfusion 'free' echo
+	# Update the list of packages in 'data/codecs-gstreamer-free.list' to suit your preferences
+	install_from_list "GStreamer (free) multimedia codecs" "codecs-gstreamer-free" install_codecs
+}
+
+# Install GStreamer (non-free) Codecs
+function gstreamer_nonfree {
+	# Add RPM Fusion Non-free
+	add_rpmfusion 'nonfree' echo
+	# Update the list of packages in 'data/codecs-gstreamer-nonfree.list' to suit your preferences
+	install_from_list "GStreamer (non-free) multimedia codecs" "codecs-gstreamer-nonfree" install_codecs
+}
+
+# Install Codecs
+function install_codecs {
+	NAME="Multimedia Codecs"
+	echo_message title "Starting $NAME installation..."
+	# Draw window
+	CODECS=$(eval `resize` && whiptail \
+		--notags \
+		--title "Install $NAME" \
+		--menu "\nWhich $NAME would you like to install?" \
+		--ok-button "Install" \
+		--cancel-button "Go Back" \
+		$LINES $COLUMNS $(( $LINES - 12 )) \
+		'gstreamer_free'    'GStreamer (free) Codecs' \
+		'gstreamer_nonfree' 'GStreamer (non-free) Codecs' \
+		'ffpmeg_codecs'     'FFmpeg Codecs' \
+		'openh264_codec'    'OpenH264 Codec' \
+		3>&1 1>&2 2>&3)
+	# check exit status
+	if [ $? = 0 ]; then
+		echo_message header "Starting '$CODECS' function"
+		$CODECS
+	else
+		# Cancelled
+		echo_message info "$NAME installation cancelled."
+		main
+	fi
+}

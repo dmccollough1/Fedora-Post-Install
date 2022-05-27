@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Dropbox
+function install_dropbox {
+	# Variables
+	NAME="Dropbox"
+	PACKAGE="nautilus-dropbox"
+	BASEURL='http://linux.dropbox.com/fedora/$releasever/'
+	GPGKEY="https://linux.dropbox.com/fedora/rpm-public-key.asc"
+	add_rpm_repo $NAME $BASEURL $GPGKEY
+	# Download and install remote package
+	install_remote_package $NAME $PACKAGE $REMOTE install_thirdparty
+}

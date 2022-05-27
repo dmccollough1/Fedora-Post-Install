@@ -1,67 +1,30 @@
-# Fedora Post Install
-This repo is a fork/clone from Tobius located at https://git.furworks.de/tobias/fedora-install
-The following README text is directly from his page as this is a FORK of their work and I take Zero credit for their work.
-The purpose of this repo is to catalog and store my own tweaked script to use for my personal gear.
+Fedora Post Install Scripts
+===========================
 
-### fedora-install
+A semi-automatic and interactive set of post-installation scripts for Fedora and its derivatives. You can use this project to install your favourite apps, set your preferred settings, and do minor housekeeping.
 
-A basic get-up-and-running Fedora install script.
+This project is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](/LICENSE). If you have improvements, contributions to the [original](https://github.com/snwh/fedora-post-install) are much appreciated.
 
-It supposed to give you an easy starting point, with quite a few good tools and a better looking/usable theme, or simple things like reenabling the maximize/minimize buttons for gnome.
+## Organization
 
-These are of course by nature my opinions for how to go about it, to save newcomers twenty pages of clicking in guis that you'd have to do to achieve the same.
+This project is designed to be fairly modular (and not be one huge script) so you can easily delete or exclude bits/functions that you don't want to use.
 
+ * [`data`](/data): files which are lists of packages<sup>&dagger;</sup> read by various functions.
+ * [`functions`](/functions): the main functions of this scriptset. They should require little user-preference modification.
+ * [`apps`](/functions/apps): functions for installing third-party applications. They are called in the [`install_thirdparty`](/functions/install_thirdparty) function.
 
-If you have Improvements or Issues, contact me!:
+*<sup>&dagger;</sup>These lists are preferential and you should to update them with packages you prefer*
 
-https://t.me/wolfshappen
+## Adding Functions
 
+Adding additional functions is as easy as editing one of the many already included functions and simply changing the variables. When you do add (or remove) functions be sure to update any main function (such as [`thirdparty`](/functions/thirdparty)) to reflect those changes.
 
-## Things YOU have to do after:
-Read the script! Seriously!
+## Usage
 
-There are additions, like if you have an AMD gpu and want to use the much better mesa-aco to render things you need to run steamlike this in a terminal/override then flatpak env:
+You use these scripts, you can just run the main script from the root of the source folder:
 
-``` bash
-FLATPAK_GL_DRIVERS=mesa-aco flatpak run com.valvesoftware.Steam
-```
+    ./fedora-post-install.sh
 
-Or making it permanent for amd so you only need to click the icon:
-``` bash
-flatpak override --env=FLATPAK_GL_DRIVERS=mesa-aco --user
-```
+Alternatively, if you use `bash` and cloned this to your home folder, add the following to your `.bashrc` to run this script on-demand.
 
-Same goes for allowing access to external harddrives/controllers for it
-``` bash
-# Allow talking to controllers
-flatpak override --user --device=all com.valvesoftware.Steam
-# Allow access to /put-your-own-path-here
-flatpak override --filesystem=/put-your-own-path-here com.valvesoftware.Steam
-```
-
-Or setting a powersave profile for tuned:
-``` bash
-sudo tuned-adm profile powersave
-```
-
-Linux is a journey, this is only the beginning. There's always more to learn if you want to!
-
-
-## RUN THIS AS YOUR USER!
-
-Seriously, this changes usersettings. root for the entire script will NOT work.
-It may require you due to the time it takes to enter your password multiple times.
-
-## For a free, open source only install run it using
-
-``` bash
-#installs wget, gets the script, makes it executable and runs it
-sudo dnf install -y wget && wget "https://git.furworks.de/tobias/fedora-install/raw/branch/master/install.sh" -O ./install.sh && chmod +x ./install.sh && ./install.sh
-```
-
-## To also get nonfree extensions, like rpmfusion nonfree upstream or steam flatpak run it this way instead
-
-``` bash
-#installs wget, gets the script, makes it executable and runs it with steam and nonfree repos added for things like nvidia drivers
-sudo dnf install -y wget && wget "https://git.furworks.de/tobias/fedora-install/raw/branch/master/install.sh" -O ./install.sh && chmod +x ./install.sh && ./install.sh --nonfree --steam
-```
+    export PATH=${PATH}:~/fedora-post-install/
