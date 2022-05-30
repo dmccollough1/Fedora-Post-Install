@@ -42,7 +42,7 @@ function install_flatpak_apps {
 			install_flatpak_discord           'Discord' \
 			install_flatpak_spotify           'Spotify' \
 			install_flatpak_sublime_text      'Sublime Text 3' \
-			install_flatpak_visualstudio_code 'VS Code' \
+			install_flatpak_visual_studio_code 'VS Code' \
 			install_flatpak_telegram          'Telegram' \
 			install_flatpak_transmission      'Transmission' \
 			install_flatpak_vlc               'VLC' \
