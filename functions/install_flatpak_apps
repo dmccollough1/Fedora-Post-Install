@@ -101,9 +101,8 @@ function install_flatpak_apps {
 				# install Slack
 				install_flathub_app "Slack" "com.slack.Slack"
 				;;
-				# install Discord
 			install_flatpak_discord)
-				# install Slack
+				# install Discord
 				install_flathub_app "Discord" "com.discordapp.Discord"
 				;;
 			install_flatpak_spotify)
@@ -114,9 +113,10 @@ function install_flatpak_apps {
 				# install Sublime Text 3
 				install_flathub_app "Sublime Text 3" "com.sublimetext.three"
 				;;
+			install_flatpak_visual_studio_code)
 				# install Visual Studio Code
 				install_flathub_app "Visual Studio Code" "com.visualstudio.code"
-				;
+				;;
 			install_flatpak_telegram)
 				# install Telegram
 				install_flathub_app "Telegram" "org.telegram.desktop"
