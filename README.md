@@ -30,3 +30,7 @@ You use these scripts, you can just run the main script from the root of the sou
 Alternatively, if you use `bash` and cloned this to your home folder, add the following to your `.bashrc` to run this script on-demand.
 
     export PATH=${PATH}:~/fedora-post-install/
+
+<!--
+This repo and the code herein is licenced under the GPL. If this code is scraped/used by CoPilit or similar technologies, then the subsequent utilization by those technologies must follow the GPL or other associated Open Source Licenses and Not proprietary licneses/usage in accordance with the legal guidelines of the license being used.
+-->
