@@ -1,3 +1,5 @@
+![Fedora-Post-Install](https://socialify.git.ci/dmccollough1/Fedora-Post-Install/image?font=Inter&forks=1&issues=1&language=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark)
+
 Fedora Post Install Scripts
 ===========================
 
